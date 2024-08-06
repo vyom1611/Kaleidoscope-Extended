@@ -1,0 +1,1 @@
+clang++ -g src/MainD.cpp src/AST.cpp src/Codegen.cpp src/Lexer.cpp src/DebugInfo.cpp src/Parser.cpp `llvm-config --cxxflags --ldflags --system-libs --libs core orcjit native` -O3 -o toy
